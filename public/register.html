@@ -100,8 +100,7 @@
 							right-0
 							items-center
 							pr-2
-							sm:static sm:inset-auto sm:ml-6 sm:pr-0
-							sm:space-x-3
+							sm:static sm:inset-auto sm:ml-6 sm:pr-0 sm:space-x-3
 							md:space-x-6
 							hidden
 							sm:flex
@@ -122,7 +121,14 @@
 									<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
 								</svg>
 								<input
-									class="px-8 py-2 bg-gray-100 border-transparent rounded-md focus:ring-0 focus:outline-none focus:border-transparent"
+									class="
+										px-8
+										py-2
+										bg-gray-100
+										border-transparent
+										rounded-md
+										focus:ring-0 focus:outline-none focus:border-transparent
+									"
 									type="search"
 									placeholder="Find Love..."
 								/>
@@ -179,9 +185,7 @@
 
 			<!-- Mobile menu, show/hide based on menu state. -->
 			<div class="sm:hidden" id="mobile-menu">
-				<div
-					class="px-5 pt-2 space-y-1"
-				>
+				<div class="px-5 pt-2 space-y-1">
 					<a
 						href="#"
 						class="
@@ -195,8 +199,7 @@
 							transition
 							duration-150
 							ease-in-out
-							hover:text-pink-500
-							hover:bg-gray-100
+							hover:text-pink-500 hover:bg-gray-100
 							py-2
 							px-2
 							rounded-md
@@ -219,8 +222,7 @@
 							transition
 							duration-150
 							ease-in-out
-							hover:text-pink-500
-							hover:bg-gray-100
+							hover:text-pink-500 hover:bg-gray-100
 							py-2
 							px-2
 							rounded-md
@@ -245,42 +247,46 @@
 								<line x1="21" y1="21" x2="16.65" y2="16.65"></line>
 							</svg>
 							<input
-									class="w-full px-8 py-2 bg-gray-100 border-transparent rounded-md focus:ring-0 focus:outline-none focus:border-transparent"
-									type="search"
-									placeholder="Find Love..."
-								/>
+								class="
+									w-full
+									px-8
+									py-2
+									bg-gray-100
+									border-transparent
+									rounded-md
+									focus:ring-0 focus:outline-none focus:border-transparent
+								"
+								type="search"
+								placeholder="Find Love..."
+							/>
 						</label>
 					</div>
 				</div>
 			</div>
 		</nav>
 
-		<section class="w-full px-8 py-5 sm:py-16 xl:px-8">
+		<section
+			class="w-full px-8 py-5 sm:py-16 xl:px-8 bg-no-repeat bg-center"
+			style="background-image: url('./img/sign-up-bg.webp')"
+		>
 			<div class="max-w-5xl mx-auto">
 				<div class="flex flex-col items-center md:flex-row">
-					<div class="w-full space-y-5 md:w-6/12 md:pr-16">
-						<p class="font-medium text-pink-500 uppercase">Lorem Idasdlajsd</p>
+					<div class="w-full space-y-5 md:w-7/12 md:pr-16">
 						<h2
 							class="
 								text-2xl
 								font-extrabold
 								leading-none
-								text-black
 								sm:text-3xl
 								md:text-5xl
 							"
 						>
-							The Fastest Way to Find Your
-							<span class="text-pink-500">Love</span>
+							Dating made <span class="text-pink-500">Fun</span>
+							Without the Game.
 						</h2>
-						<p class="text-xl text-gray-600 md:pr-16">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Cupiditate sequi ipsam praesentium neque, perferendis qui!
-							Reiciendis cum alias autem, aspernatur est nihil temporibus
-						</p>
 					</div>
 
-					<div class="w-full mt-16 md:mt-0 md:w-6/12">
+					<div class="w-full mt-16 md:mt-0 md:w-5/12">
 						<div
 							class="
 								relative
@@ -297,79 +303,171 @@
 							"
 						>
 							<h3 class="mb-6 text-2xl font-medium text-center">
-								Sign in to your Account
+								Create Your Account
 							</h3>
-							<input
-								type="text"
-								name="email"
-								class="
-									block
-									w-full
-									px-4
-									py-3
-									mb-4
-									border border-gray-200
-									focus:outline-none focus:border-pink-400 focus:ring-0
-									rounded-3xl
-								"
-								placeholder="Email address"
-							/>
-							<input
-								type="password"
-								name="password"
-								class="
-									block
-									w-full
-									px-4
-									py-3
-									mb-2
-									border border-gray-200
-									focus:outline-none focus:border-pink-400 focus:ring-0
-									rounded-3xl
-								"
-								placeholder="Password"
-							/>
 
-							<div class="py-2 px-2 flex justify-between">
-								<label class="inline-flex items-center">
-								  <input type="checkbox" class="
-									  rounded
-									  border-gray-300
-									  text-pink-600
-									  shadow-sm
-									  focus:border-pink-300
-									  focus:ring
-									  focus:ring-offset-0
-									  focus:ring-pink-200
-									  focus:ring-opacity-50
-									">
-								  <span class="ml-2 text-gray-800 text-sm cursor-pointer">Keep me signed in</span>
-								</label>
-
-								<a href="#" class="text-sm hover:text-pink-500 hover:underline">
-									Forgot Password?
-								</a>
-							  </div>
-
-							<div class="block">
-								<button
+							<label class="block mb-4">
+								<span class="text-gray-700">I'm a:</span>
+								<select
 									class="
+										block
 										w-full
-										px-3
-										py-4
-										font-medium
-										text-white
-										bg-pink-500
-										rounded-3xl
+										mt-1
+										border
+										px-4
+										py-3
+										border-gray-200
+										focus:ring-0 focus:outline-none focus:border-pink-400
 									"
 								>
-									Log Me In
+									<option selected disabled>Gender and preferences</option>
+									<option>a woman interested in men</option>
+									<option>a man interested in women</option>
+									<option>a woman interested in women</option>
+									<option>a man interested in men</option>
+								</select>
+							</label>
+
+							<div class="grid grid-cols-12 gap-6">
+								<div class="col-span-4">
+									<label class="block mb-4">
+										<span class="text-gray-700">Day</span>
+										<select
+											class="
+												block
+												w-full
+												mt-1
+												border
+												px-4
+												py-3
+												border-gray-200
+												focus:ring-0 focus:outline-none focus:border-pink-400
+											"
+										>
+											<option selected disabled>Day</option>
+											<option>a woman interested in men</option>
+											<option>a man interested in women</option>
+											<option>a woman interested in women</option>
+											<option>a man interested in men</option>
+										</select>
+									</label>
+								</div>
+								<div class="col-span-4">
+									<label class="block mb-4">
+										<span class="text-gray-700">Month</span>
+										<select
+											class="
+												block
+												w-full
+												mt-1
+												border
+												px-4
+												py-3
+												border-gray-200
+												focus:ring-0 focus:outline-none focus:border-pink-400
+											"
+										>
+											<option selected disabled>Month</option>
+											<option>a woman interested in men</option>
+											<option>a man interested in women</option>
+											<option>a woman interested in women</option>
+											<option>a man interested in men</option>
+										</select>
+									</label>
+								</div>
+								<div class="col-span-4">
+									<label class="block mb-4">
+										<span class="text-gray-700">Year</span>
+										<select
+											class="
+												block
+												w-full
+												mt-1
+												border
+												px-4
+												py-3
+												border-gray-200
+												focus:ring-0 focus:outline-none focus:border-pink-400
+											"
+										>
+											<option selected disabled>Year</option>
+											<option>a woman interested in men</option>
+											<option>a man interested in women</option>
+											<option>a woman interested in women</option>
+											<option>a man interested in men</option>
+										</select>
+									</label>
+								</div>
+							</div>
+
+							<label class="block mb-2">
+								<span class="text-gray-700">Email Address</span>
+								<input
+									type="email"
+									class="
+										block
+										w-full
+										px-4
+										py-3
+										border border-gray-200
+										focus:outline-none focus:border-pink-400 focus:ring-0
+									"
+									placeholder="name@email.com"
+								/>
+							</label>
+
+							<label class="block mb-2">
+								<span class="text-gray-700">Password</span>
+								<input
+									type="password"
+									name="password"
+									class="
+										block
+										w-full
+										px-4
+										py-3
+										mb-2
+										border border-gray-200
+										focus:outline-none focus:border-pink-400 focus:ring-0
+									"
+									placeholder="Password"
+								/>
+							</label>
+
+							<div class="py-2 px-2">
+								<label class="inline-flex items-baseline">
+									<input
+										type="checkbox"
+										class="
+											rounded
+											border-gray-300
+											text-pink-600
+											shadow-sm
+											focus:border-pink-300
+											focus:ring
+											focus:ring-offset-0
+											focus:ring-pink-200
+											focus:ring-opacity-50
+										"
+									/>
+
+									<span class="ml-2 text-gray-800 cursor-pointer"
+										>By clicking, you agree to our <a href="#" class="underline text-gray-600 hover:text-pink-500">Terms of Service</a>(including the mandatory arbitration of disputes) and consent to our <a href="#" class="underline text-gray-600 hover:text-pink-500">Privacy Policy</a></span
+									>
+								</label>
+							</div>
+
+							<div class="block mt-2">
+								<button
+									class="w-full px-3 py-4 font-medium text-white bg-pink-500"
+								>
+									Sign Up
 								</button>
 							</div>
-							<p class="w-full mt-4 text-sm text-center text-gray-500">
-								Don't have an account?
+							<p class="w-full mt-2 text-sm text-center text-gray-500">
+								Already Registered?
 								<a href="#_" class="text-pink-500 hover:text-pink-600 underline"
-									>Sign up here</a
+									>Login</a
 								>
 							</p>
 						</div>
